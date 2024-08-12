@@ -65,9 +65,4 @@
 - **Passo 5.1:** Documentar todos os bugs encontrados durante a execução dos testes.
 - **Passo 5.2:** Para cada bug, detalhar a funcionalidade afetada, a severidade, os passos para reprodução e o comportamento esperado versus o comportamento observado.
 - **Passo 5.3:** Revisar e priorizar os bugs para correção.
-
-### Conclusão
-
-Este plano de testes foi desenvolvido para cobrir todas as regras de negócio citadas, validando desde os elementos de interface até o fluxo completo de navegação e interação no website. A próxima etapa consiste na execução dos testes conforme o plano detalhado, seguido da documentação de quaisquer problemas encontrados.
-
 ---
