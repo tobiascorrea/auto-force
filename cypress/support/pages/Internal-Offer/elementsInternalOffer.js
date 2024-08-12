@@ -1,0 +1,17 @@
+export const ELEMENTS = {
+    escolha_versao: '.showcase__label-variants',
+    //title_form_conversion: '.form-conversion__title',
+    footer: '.footer-land',
+    selectable_item: '.choices__item.choices__item--selectable[data-id="1"][data-value="sdrive30i-m-sport"]',
+    input_name: 'input[name="name"]',
+    input_email: 'input[name="email"]',
+    input_phone: 'input[name="phone"]',
+    input_cpf: 'input[name="cpf"]',
+    unidade_selector: '.unidade-class .sub-class[data-id="some-id"]',
+    radio_nao: ':nth-child(2) > .form-check > :nth-child(1) > .checkable',
+    receber_contato_por: ':nth-child(3) > :nth-child(3) > .custom-check > .checkable',
+    dropdown: ':nth-child(6) > :nth-child(2) > .choices > .choices__inner > .choices__list > .choices__item',
+    dropdown_option: '.choices__list.choices__list--dropdown .choices__item',
+    button_submit: '.form-conversion__body > .btn',
+    menssage_success: '#conversion-from-new-model > .form-message-overlay > .form-message-overlay__content',
+}

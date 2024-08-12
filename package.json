@@ -1,0 +1,15 @@
+{
+  "name": "projeto-auto-force",
+  "version": "1.0.0",
+  "description": "Projeto de automação de Testes para a Auto Force",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tobias Correa Camilo",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.13.2",
+    "faker": "^6.6.6"
+  }
+}

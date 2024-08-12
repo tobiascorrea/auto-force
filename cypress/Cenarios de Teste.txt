@@ -1,0 +1,208 @@
+1. Cabeçalho
+1.1. Validação dos Botões de Telefone e WhatsApp
+Cenário 1.1.1: Exibir lista de opções ao clicar no botão de telefone
+
+Feature: Exibir lista de números de telefone
+  Como um usuário
+  Eu quero clicar no botão de telefone
+  Para ver uma lista de opções de números de telefone
+
+Scenario: Exibir lista ao clicar no botão de telefone
+  Given que estou na página inicial do website
+  When clico no botão de telefone no cabeçalho
+  Then uma lista de opções de números de telefone deve ser exibida
+
+Cenário 1.1.2: Exibir lista de opções ao clicar no botão de WhatsApp
+
+Feature: Exibir lista de números de WhatsApp
+  Como um usuário
+  Eu quero clicar no botão de WhatsApp
+  Para ver uma lista de opções de números de telefone
+
+Scenario: Exibir lista ao clicar no botão de WhatsApp
+  Given que estou na página inicial do website
+  When clico no botão de WhatsApp no cabeçalho
+  Then uma lista de opções de números de telefone deve ser exibida
+
+Cenário 1.1.3: Verificar o comportamento de listagem dos números
+
+Feature: Comportamento da listagem de números
+  Como um usuário
+  Eu quero que a lista de números seja exibida apenas ao clicar
+  Para evitar que a lista apareça sem minha ação
+
+Scenario: Mostrar lista de números apenas ao clicar
+  Given que estou na página inicial do website
+  When clico no botão de telefone ou WhatsApp
+  Then a lista de números deve ser exibida
+  And a lista deve desaparecer quando eu clicar fora dela
+
+Cenário 1.1.4: Navegar e selecionar um número da lista
+
+Feature: Selecionar número da lista
+  Como um usuário
+  Eu quero selecionar um número da lista
+  Para realizar uma chamada ou iniciar uma conversa no WhatsApp
+
+Scenario: Selecionar um número de telefone na lista
+  Given que a lista de números de telefone está exibida
+  When seleciono um número da lista
+  Then devo ser redirecionado para realizar a chamada ou abrir o WhatsApp com o número selecionado
+
+
+2. Rodapé
+2.1. Validação das Informações de Endereço e Horário de Funcionamento
+Cenário 2.1.1: Exibir corretamente endereço e horário de funcionamento
+
+Feature: Exibição de endereço e horário de funcionamento
+  Como um usuário
+  Eu quero ver o endereço e horário de funcionamento no rodapé
+  Para saber onde e quando posso visitar as unidades
+
+Scenario: Exibição de endereço e horário de funcionamento para diferentes unidades
+  Given que estou na página inicial do website
+  When olho para o rodapé
+  Then devo ver o endereço e horário de funcionamento corretamente exibidos
+  And as informações devem estar corretas para cada unidade
+
+Cenário 2.1.2: Exibição de múltiplas unidades no rodapé
+
+Feature: Exibição de múltiplas unidades
+  Como um usuário
+  Eu quero ver informações sobre todas as unidades no rodapé
+  Para saber onde estão localizadas
+
+Scenario: Exibição de informações de múltiplas unidades no rodapé
+  Given que o rodapé do site é exibido
+  When olho para a seção de unidades
+  Then devo ver as informações de todas as unidades (endereço e horário) exibidas corretamente
+
+2.2. Validação dos Dados Institucionais da Matriz
+Cenário 2.2.1: Exibir corretamente os dados institucionais da matriz
+
+Feature: Exibição dos dados institucionais da matriz
+  Como um usuário
+  Eu quero ver os dados da matriz no rodapé
+  Para ter certeza das informações institucionais da empresa
+
+Scenario: Exibição dos dados da matriz no rodapé
+  Given que estou na página inicial do website
+  When olho para o rodapé
+  Then devo ver o CNPJ, endereço e razão social da matriz exibidos corretamente
+
+3. Página Principal
+3.1. Validação do Carrossel de Banners
+Cenário 3.1.1: Exibir corretamente banners de imagem no desktop
+
+Feature: Exibição de banners de imagem no carrossel
+  Como um usuário
+  Eu quero ver banners de imagem no carrossel
+  Para entender as ofertas e promoções disponíveis
+
+Scenario: Exibição de banners de imagem no desktop
+  Given que estou acessando o website no desktop
+  When olho para o carrossel de banners na página principal
+  Then devo ver os banners de imagem exibidos corretamente
+
+Cenário 3.1.2: Exibir corretamente banners de vídeo no desktop
+
+Feature: Exibição de banners de vídeo no carrossel
+  Como um usuário
+  Eu quero ver banners de vídeo no carrossel
+  Para visualizar as ofertas de maneira mais interativa
+
+Scenario: Exibição de banners de vídeo no desktop
+  Given que estou acessando o website no desktop
+  When olho para o carrossel de banners na página principal
+  Then devo ver os banners de vídeo exibidos corretamente
+
+Cenário 3.1.3: Exibir apenas vídeos no carrossel em ambiente mobile
+
+Feature: Exibição de vídeos no carrossel em mobile
+  Como um usuário
+  Eu quero ver apenas vídeos no carrossel em dispositivos móveis
+  Para ter uma experiência mais adequada ao meu dispositivo
+
+Scenario: Exibição de vídeos no carrossel em mobile
+  Given que estou acessando o website em um dispositivo móvel
+  When olho para o carrossel de banners na página principal
+  Then devo ver apenas vídeos exibidos no carrossel
+
+Cenário 3.1.4: Funcionamento da navegação do carrossel
+
+Feature: Navegação no carrossel de banners
+  Como um usuário
+  Eu quero navegar pelos banners no carrossel
+  Para ver todas as ofertas disponíveis
+
+Scenario: Navegação no carrossel de banners
+  Given que estou na página principal do website
+  When uso os botões de navegação do carrossel
+  Then devo ser capaz de ver o próximo e o banner anterior
+  And o tempo de transição entre os banners deve ser adequado
+
+
+3.2. Validação dos Cards de Ofertas
+Cenário 3.2.1: Exibir corretamente informações dos cards de ofertas
+
+Feature: Exibição de informações nos cards de ofertas
+  Como um usuário
+  Eu quero ver todas as informações importantes nos cards de ofertas
+  Para entender rapidamente o que está sendo oferecido
+
+Scenario: Exibição de título, imagem, oferta e frase nos cards de ofertas
+  Given que estou na página principal do website
+  When olho para os cards de ofertas
+  Then devo ver o título, imagem de miniatura, oferta e frase (se presente) exibidos corretamente
+
+Cenário 3.2.2: Funcionamento do botão “saiba mais”
+
+Feature: Funcionamento do botão "saiba mais" nos cards de ofertas
+  Como um usuário
+  Eu quero clicar no botão "saiba mais"
+  Para obter mais detalhes sobre a oferta
+
+Scenario: Redirecionamento correto ao clicar em "saiba mais"
+  Given que estou na página principal do website
+  When clico no botão "saiba mais" em um card de oferta
+  Then devo ser redirecionado corretamente para a página interna da oferta
+
+
+3.3. Validação do Botão “Ordenar”
+Cenário 3.3.1: Exibir opções de ordenação ao clicar no botão “Ordenar”
+
+Feature: Exibição de opções de ordenação
+  Como um usuário
+  Eu quero clicar no botão "ordenar"
+  Para ver as opções de ordenação dos cards de ofertas
+
+Scenario: Exibir opções de ordenação ao clicar no botão “ordenar”
+  Given que estou na página principal do website
+  When clico no botão "ordenar"
+  Then devo ver uma lista com as opções de ordenação (Nome, Preço)
+
+
+Cenário 3.3.2: Funcionalidade de ordenação por Nome
+
+Feature: Ordenação dos cards de ofertas por Nome
+  Como um usuário
+  Eu quero ordenar as ofertas por Nome
+  Para ver os produtos listados alfabeticamente
+
+Scenario: Ordenação dos cards de ofertas por Nome
+  Given que estou na página principal do website
+  And cliquei na opção de ordenar por Nome
+  When olho para os cards de ofertas
+  Then devo ver os cards ordenados alfabeticamente por Nome
+
+
+Cenário 3.3.3: Funcionalidade de ordenação por Preço
+
+Feature: Ordenação dos cards de ofertas por Preço
+  Como um usuário
+  Eu quero ordenar as ofertas por Preço
+  Para ver os produtos listados do mais barato ao mais caro
+
+Scenario: Ordenação dos cards de ofertas por Preço
+
+

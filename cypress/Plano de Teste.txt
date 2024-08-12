@@ -1,0 +1,73 @@
+### Escopo de Validação e Plano de Testes
+
+---
+
+**Projeto:** Validação do Website de Ofertas
+
+**Data de Início:** [Data de Início do Projeto]
+
+**Responsável:** [Nome do Responsável]
+
+**Objetivo:** Verificar a conformidade do website com as regras de negócio especificadas, garantindo que todos os elementos funcionais e de interface estejam operando conforme esperado. 
+
+### 1. **Cabeçalho**
+
+#### 1.1. **Validação dos Botões de Telefone e WhatsApp**
+- **Teste 1.1.1:** Verificar se, ao clicar no botão de telefone, uma lista de opções com diferentes números de telefone é exibida.
+- **Teste 1.1.2:** Verificar se, ao clicar no botão de WhatsApp, uma lista de opções com diferentes números de telefone é exibida.
+- **Teste 1.1.3:** Validar se o comportamento de listagem está funcionando corretamente, mostrando as opções apenas ao clicar.
+- **Teste 1.1.4:** Testar a navegação e a seleção de um número da lista para garantir que o comportamento esperado seja cumprido.
+
+### 2. **Rodapé**
+
+#### 2.1. **Validação das Informações de Endereço e Horário de Funcionamento**
+- **Teste 2.1.1:** Verificar se o rodapé exibe corretamente o endereço e horário de funcionamento para diferentes unidades.
+- **Teste 2.1.2:** Testar a exibição de múltiplas unidades no rodapé e validar se as informações estão completas e precisas.
+
+#### 2.2. **Validação dos Dados Institucionais da Matriz**
+- **Teste 2.2.1:** Verificar se os dados da matriz (CNPJ, endereço e Razão social) estão corretos e visíveis no rodapé.
+
+### 3. **Página Principal**
+
+#### 3.1. **Validação do Carrossel de Banners**
+- **Teste 3.1.1:** Validar a exibição correta de banners em formato de imagem no desktop.
+- **Teste 3.1.2:** Validar a exibição correta de banners em formato de vídeo no desktop.
+- **Teste 3.1.3:** Verificar se, no ambiente mobile, apenas vídeos são exibidos no carrossel.
+- **Teste 3.1.4:** Validar o funcionamento da navegação do carrossel (anterior, próximo) e o tempo de transição entre banners.
+
+#### 3.2. **Validação dos Cards de Ofertas**
+- **Teste 3.2.1:** Verificar se todos os cards de ofertas exibem o Título, Imagem de Miniatura, Oferta e, quando presente, a Frase.
+- **Teste 3.2.2:** Validar o funcionamento do botão “saiba mais”, garantindo que ele redireciona corretamente para a página interna da oferta.
+
+#### 3.3. **Validação do Botão “Ordenar”**
+- **Teste 3.3.1:** Verificar se o botão “ordenar” exibe uma lista com as opções de ordenação (Nome, Preço) ao ser clicado.
+- **Teste 3.3.2:** Validar a funcionalidade de ordenação dos cards de ofertas por Nome.
+- **Teste 3.3.3:** Validar a funcionalidade de ordenação dos cards de ofertas por Preço.
+
+### 4. **Página Interna da Oferta**
+
+#### 4.1. **Validação do Formulário para Conversão de Leads**
+- **Teste 4.1.1:** Verificar a exibição e funcionalidade de todos os campos do formulário.
+- **Teste 4.1.2:** Testar o envio do formulário com dados válidos e verificar se o lead é realmente enviado.
+- **Teste 4.1.3:** Testar o envio do formulário com dados inválidos e verificar a exibição correta de mensagens de erro.
+
+#### 4.2. **Validação das Informações do Veículo**
+- **Teste 4.2.1:** Verificar a exibição correta da galeria de vídeos do veículo.
+- **Teste 4.2.2:** Validar a exibição da ficha técnica do veículo.
+- **Teste 4.2.3:** Verificar a exibição correta da galeria de imagens do veículo.
+- **Teste 4.2.4:** Validar as informações da oferta apresentadas na página.
+
+#### 4.3. **Validação de Campo Opcional com Título e Descrição**
+- **Teste 4.3.1:** Verificar se o campo opcional com título e descrição está presente e permite a inserção de informações adicionais sobre o veículo.
+
+### 5. **Documentação de Bugs**
+
+- **Passo 5.1:** Documentar todos os bugs encontrados durante a execução dos testes.
+- **Passo 5.2:** Para cada bug, detalhar a funcionalidade afetada, a severidade, os passos para reprodução e o comportamento esperado versus o comportamento observado.
+- **Passo 5.3:** Revisar e priorizar os bugs para correção.
+
+### Conclusão
+
+Este plano de testes foi desenvolvido para cobrir todas as regras de negócio citadas, validando desde os elementos de interface até o fluxo completo de navegação e interação no website. A próxima etapa consiste na execução dos testes conforme o plano detalhado, seguido da documentação de quaisquer problemas encontrados.
+
+---
