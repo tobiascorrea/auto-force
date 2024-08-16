@@ -4,7 +4,9 @@
   "description": "Projeto de automação de Testes para a Auto Force",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:electron": "cypress run --headless",
+    "test:chrome": "cypress run --headless --browser chrome",
+    "test:edge": "cypress run --headless --browser edge"
   },
   "author": "Tobias Correa Camilo",
   "license": "ISC",

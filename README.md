@@ -18,5 +18,7 @@ Descrição breve do projeto.
 
  ### Executando o projeto
 
- - Para executar no modo iterativo: npx cypress open
- - Para executar no modo Headless: npx cypress run
+ - npx cypress open : Excecuta o cypress em modo iterativo.
+ - npm run test:electron: Executa o Cypress no modo headless usando o navegador Electron, que é o navegador padrão do Cypress.
+ - npm run test:chrome: Executa o Cypress no modo headless usando o navegador Chrome. Isso requer que o Chrome esteja instalado na sua máquina.
+ - npm run test:edge: Executa o Cypress no modo headless usando o navegador Edge. Isso requer que o Edge esteja instalado na sua máquina.
