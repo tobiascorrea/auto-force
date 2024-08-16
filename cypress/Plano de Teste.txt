@@ -6,7 +6,7 @@
 
 **Data de Início:** [Data de Início do Projeto]
 
-**Responsável:** [Nome do Responsável]
+**Responsável:** [Tobias Correa Camilo]
 
 **Objetivo:** Verificar a conformidade do website com as regras de negócio especificadas, garantindo que todos os elementos funcionais e de interface estejam operando conforme esperado. 
 
